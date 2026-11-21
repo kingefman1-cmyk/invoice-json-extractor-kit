@@ -1,3 +1,5 @@
+[![Powered by Caelara Labs](https://benchmarks.caelaralabs.com/verify/powered-by.svg)](https://caelaralabs.com)
+
 # Invoice Extractor (white-label starter)
 
 A small Cloudflare Pages site that converts the text of an invoice into structured JSON using the Caelara document suite. It works on text you paste or send, not on PDFs or images.
