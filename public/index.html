@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Invoice Extractor</title>
+<meta name="description" content="Turn raw invoice text into structured JSON: number, dates, currency, line items and totals, with consistency checks.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap"><strong id="brand">Invoice Extractor</strong></div></header>
+<main class="wrap">
+  <section class="hero">
+    <h1>Turn invoice text into JSON.</h1>
+    <p class="sub">Paste the text of an invoice. You get the invoice number, dates, currency, line items and totals as structured JSON, with checks that the numbers agree.</p>
+    <form id="f" autocomplete="off"><noscript>This page needs JavaScript to run.</noscript></form>
+    <p id="status" class="status" role="status"></p>
+  </section>
+  <section id="out" hidden>
+    <div class="card">
+      <h2>Result</h2>
+      <div id="pills"></div>
+      <details><summary>Full response</summary><pre id="raw"></pre></details>
+      <p class="muted">Extraction is heuristic. Check the totals against the original document before you rely on them.</p>
+    </div>
+  </section>
+</main>
+<footer class="wrap muted foot">Data by <a href="https://caelaralabs.com" rel="noopener">Caelara Labs</a>. Heuristic checks: a clean result is not a guarantee.</footer>
+<script type="module" src="/app.js"></script>
+</body>
+</html>

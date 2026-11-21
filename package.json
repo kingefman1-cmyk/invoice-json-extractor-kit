@@ -1,0 +1,17 @@
+{
+  "name": "invoice-json-extractor-kit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Turn raw invoice text into structured JSON: number, dates, currency, line items and totals, with consistency checks.",
+  "author": "Caelara Labs <ops@caelaralabs.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "deploy": "wrangler pages deploy public",
+    "test": "node --test test/"
+  },
+  "devDependencies": {
+    "wrangler": "^3.80.0"
+  }
+}
